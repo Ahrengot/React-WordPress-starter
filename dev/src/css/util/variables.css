@@ -1,0 +1,18 @@
+/**
+ * Colors
+ */
+$brand-primary: #4567f1;
+
+/**
+ * Typography
+ */
+$font-size-root: 16px;
+
+/**
+ * Grid breakpoints
+ */
+$screen-xs: 0px;
+$screen-sm: 544px;
+$screen-md: 650px;
+$screen-lg: 1150px;
+$screen-xl: 1600px;

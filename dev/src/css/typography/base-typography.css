@@ -1,0 +1,20 @@
+html {
+  font-size: $font-size-root;
+
+  @media (min-width: $screen-md) {
+    font-size: calc($font-size-root * 1.1);
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: calc($font-size-root * 1.25);
+  }
+
+  @media (min-width: $screen-xl) {
+    font-size: calc($font-size-root * 1.35);
+  }
+}
+
+
+body {
+  font-size: 1rem;
+}

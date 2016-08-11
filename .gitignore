@@ -1,0 +1,26 @@
+
+.DS_Store
+*.log
+
+dev/node_modules
+.sass-cache
+.scssc
+*.sublime-workspace
+*.sublime-project
+
+
+# WordPress #
+wp
+
+local-config.php
+cache-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/object-cache.php
+wp-content/cache/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/tests/
+wp-content/logs/
