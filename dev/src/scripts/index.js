@@ -1,5 +1,3 @@
-import FastClick from 'fastclick'
-
 // Settings
 import Settings from './settings'
 
@@ -22,21 +20,17 @@ if (typeof __ENV__ !== 'undefined' && __ENV__ === 'development') {
   DevTools = require('devtools/devtools').default;
 }
 
-require('./util/polyfill-loader').loadPolyfills().then(() => {
-  FastClick.attach(document.body);
-
-  ReactDOM.render((
-    <Provider store={ store }>
+ReactDOM.render((
+  <Provider store={ store }>
+    <div>
       <div>
-        <div>
-          <DummyComponent />
-        </div>
-        {DevTools && (
-          <div className="redux-devtools" style={{ fontSize: 12.5, lineHeight: '1.3' }}>
-            <DevTools />
-          </div>
-        )}
+        <DummyComponent />
       </div>
-    </Provider>
-  ), document.getElementById('app'));
-});
+      {DevTools && (
+        <div className="redux-devtools" style={{ fontSize: 12.5, lineHeight: '1.3' }}>
+          <DevTools />
+        </div>
+      )}
+    </div>
+  </Provider>
+), document.querySelector('#app'));
